@@ -1,0 +1,100 @@
+html
+{
+	background-color: #3b3a3c;
+}
+
+body
+{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+body div
+{
+	width: 80%;
+	background-color: black;
+}
+
+nav
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav ul
+{
+	padding: 0;
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav ul li
+{
+	display: inline-flex;
+	background-color: #444444;
+	color: #ffffff;
+	align-items: center;
+	justify-content: center;
+	height: 10em;
+	width: 24%;
+}
+
+nav ul li:last-child
+{
+	top: -10px;
+	position: relative;
+}
+
+nav ul li span
+{
+	 margin: 0;
+	 font-family: impact;
+}
+
+nav ul li:hover
+{
+	background-color: #555555;
+}
+
+.axis *
+{
+	stroke: #555555;
+}
+
+.axis path {
+    fill: none;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 13px;
+    fill: white;
+    stroke: none;
+}
+
+div.tooltip
+{
+	position: absolute;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 40px;
+	padding: 5px;
+	font: 16px Lato;
+	background: white;
+	pointer-events: none;
+}
+
+.noselect
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}

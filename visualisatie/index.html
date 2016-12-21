@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The IMDB Effect</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<nav>
+		<ul class="noselect">
+			<li onclick="makeChart('critic_reviews', 'user_reviews')"><span>IMDB Score vs Reviews</span></li>
+			<li onclick="makeChart('critic_reviews', 'user_reviews', 1.5, 5.0)"><span>'Bad' Movies get more reviews</span></li>
+			<li onclick="makeChart('budget', 'gross')"><span>IMDB Score vs Gross and Budget</span></li>
+			<li onclick="makeChart('budget', 'gross', 2.8, 3.9)"><span>'The Badness sweetpoint'<br>between 2.8 &amp;3.9</span></li>
+		</ul>
+	</nav>
+	<svg height="500" width="1080" id="vis"></svg>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script>
+		makeChart('critic_reviews', 'user_reviews');
+	</script>
+</body>
+</html>
